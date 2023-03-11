@@ -1,0 +1,80 @@
+@import url("https://fonts.googleapis.com/css2?family=Hind:wght@400;700&display=swap");
+
+.navbar-logo {
+  margin-right: 5px;
+}
+
+.header {
+  background-image: url("images/unsplash_KfoNVMCFb5M.png");
+  background-size: cover;
+  background-position: top center;
+  min-height: 100vh;
+}
+
+.header:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.4);
+  opacity: 0.6;
+}
+
+.navbar {
+  background-color: transparent;
+}
+
+.navbar-brand {
+  font-size: 16px;
+  font-family: Calibri;
+  font-weight: 700;
+  line-height: 19.53px;
+  color: #fff;
+}
+
+.cta-btn {
+  background: #4a148c;
+  color: #fff;
+  width: 224px;
+  height: 56px;
+  border-radius: 2px;
+  font-family: "Hind", sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 29px;
+}
+
+.cta-btn:hover {
+  color: white;
+  background: #310073;
+}
+
+.nav-link {
+  font-family: "Calibri";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 22px;
+  color: #ffffff;
+  margin-right: 10px;
+}
+
+.hero h1 {
+  font-family: "Hind";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 64px;
+  color: #ffffff;
+}
+
+.hero p {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 28px;
+  line-height: 38px;
+  color: #ffffff;
+}
