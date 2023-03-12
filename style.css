@@ -62,7 +62,7 @@
 }
 
 .hero {
-    z-index: 1;
+  z-index: 1;
 }
 
 .hero h1 {
@@ -81,4 +81,63 @@
   font-size: 28px;
   line-height: 38px;
   color: #ffffff;
+}
+
+.section-1 {
+  background: #e3add7;
+}
+
+.section-1 h1 {
+  font-family: "Calibri";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 72px;
+  line-height: 88px;
+  color: #000000;
+}
+
+.section-1 h2 {
+  font-family: "Hind";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 38px;
+  color: #1d0216;
+}
+
+.section-1 h3 {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 26px;
+  line-height: 35px;
+  color: #000000;
+}
+
+.section-1 p {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 33px;
+  letter-spacing: 0.02em;
+  color: #000000;
+}
+
+.section-1 .col-md-12 p {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 26px;
+  line-height: 60px;
+  color: #000000;
+}
+
+.section-1 .col-md-12::after {
+  content: "";
+  position: absolute;
+  height: 3px;
+  left: 0px;
+  right: 0;
+  background: #f989e0;
 }
