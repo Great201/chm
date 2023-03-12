@@ -14,20 +14,28 @@
 </head>
 
 <body>
-    <header class="header d-flex flex-column justify-content-between">
-        <nav class="navbar navbar-expand-md navbar-dark">
-            <div class="container">
+  <header class="header d-flex flex-column justify-content-between">
+    <nav class="navbar navbar-expand-md navbar-dark">
+        <div class="container">
+          <button class="navbar-toggler mr-auto" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
+          aria-controls="offcanvasNavbar">
+      <span class="navbar-toggler-icon"></span>
+  </button>
 
-                <img src="images/Logo.png" class="navbar-logo" />
-                <a class="navbar-brand" href="#">
-                    CREATIVE <br>
-                    HANDS MINISTRY
-                </a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
-                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+
+            <img src="images/Logo.png" class="navbar-logo" />
+            <a class="navbar-brand" href="#">
+                CREATIVE <br>
+                HANDS MINISTRY
+            </a>
+
+            <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="navbarNavLabel">
+                <div class="offcanvas-header">
+                    <h5 class="offcanvas-title" id="navbarNavLabel">Menu</h5>
+                    <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"
+                        aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
                     <ul class="navbar-nav">
                         <li class="nav-item active">
                             <a class="nav-link" href="#">About Us</a>
@@ -43,24 +51,25 @@
                         </li>
                     </ul>
                 </div>
-                <div class="ml-auto">
-                    <button class="btn cta-btn" type="button">Join Our Community</button>
-                </div>
             </div>
-        </nav>
 
-        <div class="container hero">
-            <h1>A MINISTRY OF HELP THAT IS</h1>
-            <p>Transforming, Empowering and Establishing <br>
-                Women, Youth and Children <br>
-                Spiritually, Skillfully, Financially and Materially.</p>
-            <button class="btn cta-btn">Join Our Community</button>
+            <div class="offcanvas-footer ml-auto">
+              <button class="btn cta-btn" type="button">Join Our Community</button>
+            </div>
         </div>
+    </nav>
 
-        <div></div>
+    <div class="container hero">
+        <h1>A MINISTRY OF HELP THAT IS</h1>
+        <p>Transforming, Empowering and Establishing <br>
+            Women, Youth and Children <br>
+            Spiritually, Skillfully, Financially and Materially.</p>
+        <button class="btn cta-btn">Join Our Community</button>
+    </div>
 
+    <div></div>
+</header>
 
-    </header>
 
     <section class="section-1">
         <div class="container py-5">

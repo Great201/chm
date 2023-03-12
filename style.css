@@ -8,7 +8,7 @@
   background-image: url("images/unsplash_KfoNVMCFb5M.png");
   background-size: cover;
   background-position: top center;
-  min-height: 100vh;
+  height: 100vh;
 }
 
 .header:before {
@@ -32,6 +32,10 @@
   font-weight: 700;
   line-height: 19.53px;
   color: #fff;
+}
+
+.navbar .cta-btn{
+  display: none;
 }
 
 .cta-btn {
@@ -303,17 +307,17 @@ footer .email-form {
     font-size: 24px;
     line-height: 38px;
     color: #E3ADD7;
-    position: absolute;
+    /* position: absolute;
     width: 75px;
     height: 29px;
     left: 450px;
-    top: 0px;
+    top: 0px; */
 }
 
 .footer .email-form .form-group img {
-    position: absolute;
+    /* position: absolute;
     left: 575px;
-    top: 12px;
+    top: 12px; */
 } 
 
 .footer .social-icons a {
@@ -332,4 +336,62 @@ footer .email-form {
     font-size: 16px;
     line-height: 24px;
     color: #FFFFFF;
+}
+
+.offcanvas {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 1050;
+  padding: 1rem;
+  overflow-x: hidden;
+  transition: transform 0.3s ease-in-out;
+  transform: translateX(100%);
+  max-width: 70%;
+}
+
+.offcanvas.show {
+  transform: translateX(0);
+}
+
+
+@media (max-width: 576px) {
+  .nav-link{
+    color: #111;
+  }
+}
+
+
+@media (min-width: 768px) {
+  .header {
+    min-height: 100vh;
+  }
+
+  .navbar .cta-btn {
+    display: inline-block;
+  }
+
+}
+
+@media (min-width: 1200px) {
+  .footer .email-form .form-group .form-btn {
+    font-family: 'Hind';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 38px;
+    color: #E3ADD7;
+    position: absolute;
+    width: 75px;
+    height: 29px;
+    left: 450px;
+    top: 0px;
+}
+
+.footer .email-form .form-group img {
+    position: absolute;
+    left: 575px;
+    top: 12px;
+} 
 }
