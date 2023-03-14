@@ -4,6 +4,25 @@
   margin-right: 5px;
 }
 
+.navbar-toggler {
+  order: 1;
+}
+
+.offcanvas {
+  width: 300px;
+}
+
+@media (max-width: 991.98px) {
+  .navbar-toggler {
+    order: 3;
+  }
+  
+  .offcanvas {
+    width: 100%;
+  }
+}
+
+
 .header {
   background-image: url("images/unsplash_KfoNVMCFb5M.png");
   background-size: cover;
@@ -19,7 +38,6 @@
   bottom: 0;
   left: 0;
   background-color: rgba(0, 0, 0, 0.4);
-  opacity: 0.6;
 }
 
 .navbar {
@@ -199,7 +217,7 @@
 .col-md-4.mb-4:first-child::after {
   content: "";
   position: absolute;
-  width: 370px;
+  width: 340px;
   height: 2px;
   background: #e3add7;
   border-radius: 0px;
@@ -307,18 +325,8 @@ footer .email-form {
     font-size: 24px;
     line-height: 38px;
     color: #E3ADD7;
-    /* position: absolute;
-    width: 75px;
-    height: 29px;
-    left: 450px;
-    top: 0px; */
 }
 
-.footer .email-form .form-group img {
-    /* position: absolute;
-    left: 575px;
-    top: 12px; */
-} 
 
 .footer .social-icons a {
     width: 40px;
