@@ -113,8 +113,6 @@
   font-family: "Calibri";
   font-style: normal;
   font-weight: 700;
-  font-size: 72px;
-  line-height: 88px;
   color: #000000;
 }
 
@@ -122,8 +120,6 @@
   font-family: "Hind";
   font-style: normal;
   font-weight: 600;
-  font-size: 24px;
-  line-height: 38px;
   color: #1d0216;
 }
 
@@ -131,8 +127,6 @@
   font-family: "Open Sans";
   font-style: normal;
   font-weight: 600;
-  font-size: 26px;
-  line-height: 35px;
   color: #000000;
 }
 
@@ -140,8 +134,6 @@
   font-family: "Open Sans";
   font-style: normal;
   font-weight: 400;
-  font-size: 24px;
-  line-height: 33px;
   letter-spacing: 0.02em;
   color: #000000;
 }
@@ -381,6 +373,33 @@ footer .email-form {
     display: inline-block;
   }
 
+  .section-1 h1 {
+    font-size: 72px;
+    line-height: 88px;
+    color: #000000;
+  }
+  
+  .section-1 h2 {
+    font-size: 24px;
+    line-height: 38px;
+  }
+  
+  .section-1 h3 {
+    font-size: 26px;
+    line-height: 35px;
+  }
+  
+  .section-1 p {
+    font-size: 24px;
+    line-height: 33px;
+    letter-spacing: 0.02em;
+  }
+  
+  .section-1 .col-md-12 p {
+    font-size: 26px;
+    line-height: 60px;
+  }
+
 }
 
 @media (min-width: 1200px) {
@@ -405,9 +424,6 @@ footer .email-form {
 } 
 }
 
-
-
-
 /* Adjust font sizes for smaller screens */
 @media only screen and (max-width: 768px) {
   h1 {
@@ -418,6 +434,9 @@ footer .email-form {
   }
   h3 {
     font-size: 1.25rem;
+  }
+  p, a, span{
+    font-size: 1rem;
   }
 }
 
@@ -511,4 +530,21 @@ footer .email-form {
 }
 .nav-item {
   margin-right: 1rem;
+}
+
+
+.abt-header {
+  background-image: url('/images/Rectangle\ 4.png');
+}
+
+.abt-nav {
+  background-color: #E3ADD7;
+}
+
+.mission {
+  background: #E3ADD7;
+}
+
+.header.abt-header:before {
+  display: none;
 }
