@@ -24,10 +24,13 @@
 
 
 .header {
-  background-image: url("images/unsplash_KfoNVMCFb5M.png");
   background-size: cover;
   background-position: top center;
   height: 100vh;
+}
+
+.header.home {
+  background-image: url("images/unsplash_KfoNVMCFb5M.png");
 }
 
 .header:before {
