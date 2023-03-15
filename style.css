@@ -551,3 +551,23 @@ footer .email-form {
 .header.abt-header:before {
   display: none;
 }
+
+@media (max-width: 768px) {
+  .responsive-image {
+    content: url("images/another-globe-rendering-pink-globe-transparent-1156303134059goy1qfmw\ 1small.png");
+  }
+}
+
+/* styles for medium screens */
+@media (min-width: 769px) and (max-width: 992px) {
+  .responsive-image {
+    content: url("medium-image.jpg");
+  }
+}
+
+/* styles for large screens */
+@media (min-width: 993px) {
+  .responsive-image {
+    content: url("images/another-globe-rendering-pink-globe-transparent-1156303134059goy1qfmw\ 2\ \(1\).png");
+  }
+}
