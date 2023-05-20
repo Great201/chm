@@ -31,6 +31,7 @@
 
 .header.home {
   background-image: url("images/unsplash_KfoNVMCFb5M.png");
+  transition: background-image 1s ease-in-out;
 }
 
 .header:before {
@@ -85,6 +86,41 @@
   color: #ffffff;
   margin-right: 10px;
 }
+
+.slider-button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 10;
+  width: 50px;
+  height: 50px;
+  background-color: rgba(255, 255, 255, 0.5);
+  border-radius: 50%;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.slider-button:hover {
+  background-color: rgba(255, 255, 255, 0.8);
+}
+
+.slider-button-icon {
+  color: #000;
+  font-size: 20px;
+  line-height: 50px;
+  text-align: center;
+}
+
+.slider-button-prev {
+  left: 20px;
+}
+
+.slider-button-next {
+  right: 20px;
+}
+
 
 .hero {
   z-index: 1;
@@ -518,7 +554,8 @@ footer .email-form {
   border: none;
 }
 .cta-btn:hover {
-  background-color: #f59203;
+  background-color: #F27550;
+  transition: background-color 2s ease;
 }
 
 /* Adjust navbar logo size */

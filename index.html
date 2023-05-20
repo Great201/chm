@@ -69,6 +69,9 @@
                   <a class="nav-link" href="what_we_do.html">What we do</a>
                 </li>
                 <li class="nav-item">
+                  <a class="nav-link" href="what_we_do.html">Projects</a>
+                </li>
+                <li class="nav-item">
                   <a class="nav-link" href="gallery.html">Gallery</a>
                 </li>
               </ul>
@@ -76,7 +79,7 @@
           </div>
 
           <div class="offcanvas-footer ml-auto">
-            <button class="btn cta-btn" type="button">
+            <button class="btn cta-btn" type="button" id="btn">
               Join Our Community
             </button>
           </div>
@@ -94,6 +97,13 @@
       </div>
 
       <div></div>
+
+      <button class="slider-button slider-button-prev">
+        <i class="fas fa-chevron-left slider-button-icon"></i>
+      </button>
+      <button class="slider-button slider-button-next">
+        <i class="fas fa-chevron-right slider-button-icon"></i>
+      </button>
     </header>
 
     <section class="section-1">
@@ -312,5 +322,79 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     ></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+      $(document).ready(function () {
+        // Image URLs for different backgrounds
+        const backgrounds = [
+          "images/christina-wocintechchat-com-c6wbSBaYxkY-unsplash.jpg",
+          "images/alex-starnes-tbYPDBChsZU-unsplash.jpg",
+          "images/christina-wocintechchat-com-rg1y72eKw6o-unsplash.jpg",
+          "images/terricks-noah-n9R0MN3XGvY-unsplash.jpg",
+          "images/unsplash_KfoNVMCFb5M.png",
+        ];
+
+        let currentBackgroundIndex = 0;
+
+        // Function to change the background image
+        function changeBackground() {
+          // Set the new background image with a transition effect
+          $(".header").css({
+            "background-image":
+              "url(" + backgrounds[currentBackgroundIndex] + ")",
+            transition: "background-image 1s ease-in-out",
+          });
+
+          // Increment the background index
+          currentBackgroundIndex++;
+
+          // Wrap around to the first background if index exceeds the length
+          if (currentBackgroundIndex >= backgrounds.length) {
+            currentBackgroundIndex = 0;
+          }
+        }
+
+        // Change the background image every 3 seconds
+        setInterval(changeBackground, 5000);
+
+        $(".slider-button-prev").click(function () {
+          clearInterval(changeBackground); // Stop automatic background changes
+
+          // Decrement the background index
+          currentBackgroundIndex--;
+
+          // Wrap around to the last background if index becomes negative
+          if (currentBackgroundIndex < 0) {
+            currentBackgroundIndex = backgrounds.length - 1;
+          }
+
+          // Set the new background image with a transition effect
+          $(".header").css({
+            "background-image":
+              "url(" + backgrounds[currentBackgroundIndex] + ")",
+            transition: "background-image 0.5s ease-in-out",
+          });
+        });
+
+        $(".slider-button-next").click(function () {
+          clearInterval(changeBackground); // Stop automatic background changes
+
+          // Increment the background index
+          currentBackgroundIndex++;
+
+          // Wrap around to the first background if index exceeds the length
+          if (currentBackgroundIndex >= backgrounds.length) {
+            currentBackgroundIndex = 0;
+          }
+
+          // Set the new background image with a transition effect
+          $(".header").css({
+            "background-image":
+              "url(" + backgrounds[currentBackgroundIndex] + ")",
+            transition: "background-image 0.5s ease-in-out",
+          });
+        });
+      });
+    </script>
   </body>
 </html>
