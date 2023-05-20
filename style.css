@@ -16,12 +16,11 @@
   .navbar-toggler {
     order: 3;
   }
-  
+
   .offcanvas {
     width: 100%;
   }
 }
-
 
 .header {
   background-size: cover;
@@ -56,7 +55,7 @@
   color: #fff;
 }
 
-.navbar .cta-btn{
+.navbar .cta-btn {
   display: none;
 }
 
@@ -120,7 +119,6 @@
 .slider-button-next {
   right: 20px;
 }
-
 
 .hero {
   z-index: 1;
@@ -267,115 +265,123 @@
 }
 
 .section-2 .btn:hover {
-  background: #E3ADD7;
-  border: 1px solid #E3ADD7;
+  background: #e3add7;
+  border: 1px solid #e3add7;
   color: #fff;
 }
 
 .section-3 {
-    background: #E3ADD7;
+  background: #e3add7;
 }
 
-.section-3 blockquote{
-    font-family: 'Open Sans';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 20px;
-    line-height: 200%;
-    text-align: center;
-    color: #021D33;
+.section-3 h2 {
+  font-family: "Hind";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 38px;
+  color: #000000;
+}
+
+.section-3 blockquote {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 200%;
+  text-align: center;
+  color: #021d33;
 }
 
 .section-3 blockquote p:before {
-    content: '\201c';
-    font-size: 100px;
-    color: #021D33;
-    text-align: left;
-    display: block; 
+  content: "\201c";
+  font-size: 100px;
+  color: #021d33;
+  text-align: left;
+  display: block;
 }
 
 .section-3 blockquote p:after {
-    content: '\201d';
-    font-size: 100px;
-    color: #021D33;
-    text-align: right;
-    display: block;
+  content: "\201d";
+  font-size: 100px;
+  color: #021d33;
+  text-align: right;
+  display: block;
 }
 
 .footer {
-    background: #360E66;
+  background: #360e66;
 }
 
-.footer h4{
-    font-family: 'Hind';
-    font-style: normal;
-    font-weight: 600;
-    font-size: 20px;
-    line-height: 32px;
-    color: #FFFFFF;
+.footer h4 {
+  font-family: "Hind";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 32px;
+  color: #ffffff;
 }
 
 .footer p {
-    font-family: 'Open Sans';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 22px;
-    color: #FFFFFF;
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+  color: #ffffff;
 }
 
 footer .email-form {
-    position: relative;
+  position: relative;
 }
 
-.footer .email-form .form-group input{
-    position: relative;
-    width: 100%;
-    border: none;
-    border-bottom: 1px solid #fff;
-    border-radius: 0;
-    font-size: 20px;
-    outline: 0;
-    background: transparent;
-    box-shadow: none;
-    color: #fff;
+.footer .email-form .form-group input {
+  position: relative;
+  width: 100%;
+  border: none;
+  border-bottom: 1px solid #fff;
+  border-radius: 0;
+  font-size: 20px;
+  outline: 0;
+  background: transparent;
+  box-shadow: none;
+  color: #fff;
 }
-  
+
 .footer .email-form .form-group input::placeholder {
-    font-family: 'Open Sans';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 18px;
-    line-height: 25px;
-    color: #FFFFFF;
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 25px;
+  color: #ffffff;
 }
 
 .footer .email-form .form-group .form-btn {
-    font-family: 'Hind';
-    font-style: normal;
-    font-weight: 500;
-    font-size: 24px;
-    line-height: 38px;
-    color: #E3ADD7;
+  font-family: "Hind";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 38px;
+  color: #e3add7;
 }
 
-
 .footer .social-icons a {
-    width: 40px;
-    height: 40px;
-    color: #fff;
-    background: #2A0854;
-    border: 1px solid #2A0854;
-    border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  color: #fff;
+  background: #2a0854;
+  border: 1px solid #2a0854;
+  border-radius: 50%;
 }
 
 .footer .copy {
-    font-family: 'Poppins';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 24px;
-    color: #FFFFFF;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #ffffff;
 }
 
 .offcanvas {
@@ -395,13 +401,11 @@ footer .email-form {
   transform: translateX(0);
 }
 
-
 @media (max-width: 576px) {
-  .nav-link{
+  .nav-link {
     color: #111;
   }
 }
-
 
 @media (min-width: 992px) {
   .header {
@@ -417,50 +421,49 @@ footer .email-form {
     line-height: 88px;
     color: #000000;
   }
-  
+
   .section-1 h2 {
     font-size: 24px;
     line-height: 38px;
   }
-  
+
   .section-1 h3 {
     font-size: 26px;
     line-height: 35px;
   }
-  
+
   .section-1 p {
     font-size: 24px;
     line-height: 33px;
     letter-spacing: 0.02em;
   }
-  
+
   .section-1 .col-md-12 p {
     font-size: 26px;
     line-height: 60px;
   }
-
 }
 
 @media (min-width: 1200px) {
   .footer .email-form .form-group .form-btn {
-    font-family: 'Hind';
+    font-family: "Hind";
     font-style: normal;
     font-weight: 500;
     font-size: 24px;
     line-height: 38px;
-    color: #E3ADD7;
+    color: #e3add7;
     position: absolute;
     width: 75px;
     height: 29px;
     left: 450px;
     top: 0px;
-}
+  }
 
-.footer .email-form .form-group img {
+  .footer .email-form .form-group img {
     position: absolute;
     left: 575px;
     top: 12px;
-} 
+  }
 }
 
 /* Adjust font sizes for smaller screens */
@@ -474,7 +477,9 @@ footer .email-form {
   h3 {
     font-size: 1.25rem;
   }
-  p, a, span{
+  p,
+  a,
+  span {
     font-size: 1rem;
   }
 }
@@ -502,14 +507,16 @@ footer .email-form {
 }
 
 /* Adjust padding on section-1 and section-2 */
-.section-1, .section-2 {
+.section-1,
+.section-2 {
   padding-top: 5rem;
   padding-bottom: 5rem;
 }
 
 /* Make section-1 and section-2 columns stack vertically for smaller screens */
 @media only screen and (max-width: 992px) {
-  .section-1 .row, .section-2 .row {
+  .section-1 .row,
+  .section-2 .row {
     flex-direction: column;
   }
 }
@@ -549,12 +556,12 @@ footer .email-form {
   font-weight: bold;
 }
 .cta-btn {
-  background-color: #360E66;
+  background-color: #360e66;
   color: #fff;
   border: none;
 }
 .cta-btn:hover {
-  background-color: #F27550;
+  background-color: #f27550;
   transition: background-color 2s ease;
 }
 
@@ -572,17 +579,16 @@ footer .email-form {
   margin-right: 1rem;
 }
 
-
 .abt-header {
   background-image: url("images/about_header.png");
 }
 
 .abt-nav {
-  background-color: #E3ADD7;
+  background-color: #e3add7;
 }
 
 .mission {
-  background: #E3ADD7;
+  background: #e3add7;
 }
 
 .header.abt-header:before {

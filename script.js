@@ -29,7 +29,7 @@ $(document).ready(function () {
       }
     }
 
-    // Change the background image every 3 seconds
+    // Change the background image every 5 seconds
     setInterval(changeBackground, 5000);
 
     $(".slider-button-prev").click(function () {
@@ -47,7 +47,7 @@ $(document).ready(function () {
       $(".header").css({
         "background-image":
           "url(" + backgrounds[currentBackgroundIndex] + ")",
-        transition: "background-image 0.5s ease-in-out",
+        transition: "background-image 3s ease-in-out",
       });
     });
 
@@ -66,7 +66,7 @@ $(document).ready(function () {
       $(".header").css({
         "background-image":
           "url(" + backgrounds[currentBackgroundIndex] + ")",
-        transition: "background-image 0.5s ease-in-out",
+        transition: "background-image 3s ease-in-out",
       });
     });
   });
